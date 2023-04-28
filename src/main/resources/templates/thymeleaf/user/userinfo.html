@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"> <!-- 안넣어주면 오류가 생길수도 있기 때문에 어려운것 아니니 그냥 넣어주자 -->
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <h1>이것은 userinfo이다!!</h1>
+  <h1 th:text="'안녕하세요 ' + ${username} + ' 입니다.'">안녕하세요 게스트 입니다.</h1>
+  <h1 th:text="${userid}"></h1>
+</body>
+</html>

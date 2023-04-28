@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+
+    <h3 th:text="${heading}">제목</h3>
+    <p>사용자가 입력한 유저 정보</p>
+        <table cellpadding=10 border=1>
+
+            <tr>
+                <td>userName</td>
+                <td>
+                    <input type="text" th:value="${userDTO.userName}">
+                </td>
+
+                <td>userId</td>
+                <td>
+                    <input type="text" th:value="${userDTO.userId}">
+                </td>
+
+                <td>userPhone</td>
+                <td>
+                    <input type="text" th:value="${userDTO.userPhone}">
+                </td>
+            </tr>
+
+
+        </table>
+    <h1 th:text="${userDTO.userName}">이름</h1>
+    <h1 th:text="${userDTO.userId}">아이디</h1>
+    <h1 th:text="${userDTO.userPhone}">번호</h1>
+
+</div>
+
+
+
+</body>
+</html>

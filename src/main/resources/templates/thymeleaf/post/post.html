@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Post Test</title>
+</head>
+<body>
+    <h1>Post방식으로 출력된 값 전달하기</h1>
+    <h1 th:text="${membername}">멤버네임</h1>
+    <h1 th:text="${memberid}">멤버네임</h1>
+
+    <h1 th:text="${req}">req</h1>
+
+    <h1>아래는 self</h1>
+    <h1 th:text="${test}"></h1>
+    <h1 th:text="${test2}"></h1>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>SampleController5Form</title>
+    <style>
+            form > label{
+                display: inline-block;
+                width: 120px;
+            }
+            form > input{
+                padding: 4px;
+                margin-bottom: 4px;
+            }
+
+    </style>
+</head>
+<body>
+
+<h1>insert page</h1>
+<form action="#" th:action="@{/SampleController5View}" th:object="${bookDTO}" method="POST">
+    <label for="title">title</label>
+    <input type="text" id="title" th:field="*{title}">
+    <br>
+
+    <label for="author">author</label>
+    <input type="text" id="author" th:field="*{author}">
+    <br>
+
+    <label for="publisher">publisher</label>
+    <input type="text" id="publisher" th:field="*{publisher}">
+    <br>
+
+    <label for="publishingDate">publishingDate</label>
+    <input type="date" id="publishingDate" th:field="*{publishingDate}">
+    <br>
+
+    <input type="submit" value="전송">
+    <input type="reset" value="초기화">
+
+</form>
+
+</body>
+</html>
